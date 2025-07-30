@@ -164,6 +164,7 @@
             btnImportar2.TabIndex = 7;
             btnImportar2.Values.DropDownArrowColor = Color.Empty;
             btnImportar2.Values.Text = "Importar Archivo 2";
+            btnImportar2.Click += btnImportar2_Click;
             // 
             // btnComparar
             // 
@@ -200,6 +201,7 @@
             btnComparar.TabIndex = 8;
             btnComparar.Values.DropDownArrowColor = Color.Empty;
             btnComparar.Values.Text = "Comparar Archivos";
+            btnComparar.Click += btnComparar_Click;
             // 
             // Form1
             // 
