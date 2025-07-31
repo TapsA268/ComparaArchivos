@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClosedXML.Excel;
 using System.Data.SQLite;
+using System.Data;
 
 namespace ComparadorArchivos
 {
@@ -48,6 +49,22 @@ namespace ComparadorArchivos
                 new SQLiteCommand(insertSql, conn).ExecuteNonQuery();
             }
         }
+        public DataTable ConsultarTabla(string nombreTabla)
+        {
+            using var conn = GetConnection();
+            string consultaSql = $"SELECT * FROM [{nombreTabla}]";
+
+            using var comando = new SQLiteCommand(consultaSql, conn);
+            using var adaptador = new SQLiteDataAdapter(comando);
+
+            var tabla = new DataTable();
+            adaptador.Fill(tabla);
+
+            conn.Close();
+
+            return tabla;
+        }
+
         public void ImportarDatos(string tabla)
         {
             var headers = GetHeaders();
