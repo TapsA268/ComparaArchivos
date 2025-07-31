@@ -7,23 +7,23 @@ using System.Threading.Tasks;
 
 namespace ComparadorArchivos
 {
-    internal class LogicaNegocio
+    public class LogicaNegocio
     {
         readonly string rutaArchivo;
         internal AccesoDatos datos;
 
-        public LogicaNegocio(string rutaArchivo)
+        internal LogicaNegocio(string rutaArchivo)
         {
             this.rutaArchivo = rutaArchivo;
             datos = new AccesoDatos(rutaArchivo);
         }
 
-        public string ImportarDatos(string nombreTabla)
+        internal string ImportarDatos(string nombreTabla, Action<int, int>? notificarProgreso = null)
         {
             string msj = "";
             try
             {
-                datos.ImportarDatos(nombreTabla);
+                datos.ImportarDatos(nombreTabla,notificarProgreso);
                 msj = "Archivo importado correctamente";
             }
             catch (Exception)
@@ -33,9 +33,14 @@ namespace ComparadorArchivos
             return msj;
         }
 
-        public DataTable ObtenerDatos(string nombreTabla)
+        internal DataTable ObtenerDatos(string nombreTabla)
         {
             return datos.ConsultarTabla(nombreTabla);
+        }
+
+        internal string[] ObtenerCampos()
+        {
+            return datos.GetHeaders();
         }
     }
 }

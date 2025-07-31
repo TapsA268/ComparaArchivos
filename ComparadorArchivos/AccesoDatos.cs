@@ -1,12 +1,13 @@
-﻿using System;
+﻿using ClosedXML.Excel;
+using DocumentFormat.OpenXml.Vml;
+using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ClosedXML.Excel;
-using System.Data.SQLite;
-using System.Data;
 
 namespace ComparadorArchivos
 {
@@ -18,12 +19,12 @@ namespace ComparadorArchivos
         {
             this.rutaArchivo = rutaArchivo;
         }
-        private string[] GetHeaders()
+        internal string[] GetHeaders()
         {
             var workbook = new XLWorkbook(rutaArchivo);
             var worksheet = workbook.Worksheets.First();
             return worksheet.Row(1).Cells().Select(c => c.Value.ToString()).ToArray();
-        }
+        }       
         private SQLiteConnection GetConnection()
         {
             SQLiteConnection conn = new ($"Data Source=Archivos;Version=3;");
@@ -35,11 +36,12 @@ namespace ComparadorArchivos
             string createSql = $"CREATE TABLE IF NOT EXISTS [{tabla}] ({string.Join(", ", headers.Select(h => $"[{h}] TEXT"))});";
             new SQLiteCommand(createSql, conn).ExecuteNonQuery();
         }
-        private void InsertarDatos(SQLiteConnection conn, string tabla, string[] headers)
+        private void InsertarDatos(SQLiteConnection conn, string tabla, string[] headers, Action<int, int>? notificarProgreso)
         {
             var workbook = new XLWorkbook(rutaArchivo);
             var worksheet = workbook.Worksheets.First();
             int rowCount = worksheet.LastRowUsed().RowNumber();
+            int total = rowCount - 1;
 
             for (int i = 2; i <= rowCount; i++)
             {
@@ -47,9 +49,11 @@ namespace ComparadorArchivos
                 var values = row.Select(c => $"'{c.Value.ToString().Replace("'", "''")}'");
                 string insertSql = $"INSERT INTO [{tabla}] ({string.Join(", ", headers.Select(h => $"[{h}]"))}) VALUES ({string.Join(", ", values)});";
                 new SQLiteCommand(insertSql, conn).ExecuteNonQuery();
+
+                notificarProgreso?.Invoke(i - 1, total); // Porque comienza en fila 2
             }
         }
-        public DataTable ConsultarTabla(string nombreTabla)
+        internal DataTable ConsultarTabla(string nombreTabla)
         {
             using var conn = GetConnection();
             string consultaSql = $"SELECT * FROM [{nombreTabla}]";
@@ -65,12 +69,12 @@ namespace ComparadorArchivos
             return tabla;
         }
 
-        public void ImportarDatos(string tabla)
+        internal void ImportarDatos(string tabla, Action<int, int>? notificarProgreso = null)
         {
             var headers = GetHeaders();
             using var conn = GetConnection();
             CrearTabla(conn, tabla, headers);
-            InsertarDatos(conn, tabla, headers);
+            InsertarDatos(conn, tabla, headers,notificarProgreso);
             conn.Close();
         }
     }
