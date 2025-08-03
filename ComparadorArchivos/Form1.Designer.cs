@@ -28,33 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            kryptonThemeComboBox1 = new Krypton.Toolkit.KryptonThemeComboBox();
             btnImportar1 = new Krypton.Toolkit.KryptonButton();
-            kryptonThemeComboBox2 = new Krypton.Toolkit.KryptonThemeComboBox();
             kryptonDataGridView1 = new Krypton.Toolkit.KryptonDataGridView();
             kryptonDataGridView2 = new Krypton.Toolkit.KryptonDataGridView();
             btnImportar2 = new Krypton.Toolkit.KryptonButton();
             btnComparar = new Krypton.Toolkit.KryptonButton();
-            ((System.ComponentModel.ISupportInitialize)kryptonThemeComboBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)kryptonThemeComboBox2).BeginInit();
+            archivoLabel1 = new Krypton.Toolkit.KryptonLabel();
+            archivoLabel2 = new Krypton.Toolkit.KryptonLabel();
+            comboBox1 = new ComboBox();
+            comboBox2 = new ComboBox();
+            tablaLabel1 = new Krypton.Toolkit.KryptonLabel();
+            tablaLabel2 = new Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)kryptonDataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)kryptonDataGridView2).BeginInit();
             SuspendLayout();
             // 
-            // kryptonThemeComboBox1
-            // 
-            kryptonThemeComboBox1.DefaultPalette = Krypton.Toolkit.PaletteMode.VisualStudio2010Render2013;
-            kryptonThemeComboBox1.DropDownWidth = 131;
-            kryptonThemeComboBox1.Location = new Point(210, 93);
-            kryptonThemeComboBox1.Name = "kryptonThemeComboBox1";
-            kryptonThemeComboBox1.Size = new Size(151, 28);
-            kryptonThemeComboBox1.StateActive.ComboBox.Border.Rounding = 10F;
-            kryptonThemeComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            kryptonThemeComboBox1.TabIndex = 0;
-            // 
             // btnImportar1
             // 
-            btnImportar1.Location = new Point(74, 95);
+            btnImportar1.Location = new Point(74, 70);
             btnImportar1.Name = "btnImportar1";
             btnImportar1.PaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365BlackDarkMode;
             btnImportar1.Size = new Size(118, 25);
@@ -89,17 +80,6 @@
             btnImportar1.Values.Text = "Importar Archivo 1";
             btnImportar1.Click += kryptonButton1_Click;
             // 
-            // kryptonThemeComboBox2
-            // 
-            kryptonThemeComboBox2.DefaultPalette = Krypton.Toolkit.PaletteMode.VisualStudio2010Render2013;
-            kryptonThemeComboBox2.DropDownWidth = 131;
-            kryptonThemeComboBox2.Location = new Point(612, 93);
-            kryptonThemeComboBox2.Name = "kryptonThemeComboBox2";
-            kryptonThemeComboBox2.Size = new Size(151, 28);
-            kryptonThemeComboBox2.StateActive.ComboBox.Border.Rounding = 10F;
-            kryptonThemeComboBox2.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            kryptonThemeComboBox2.TabIndex = 3;
-            // 
             // kryptonDataGridView1
             // 
             kryptonDataGridView1.AllowUserToAddRows = false;
@@ -131,7 +111,7 @@
             // 
             // btnImportar2
             // 
-            btnImportar2.Location = new Point(476, 95);
+            btnImportar2.Location = new Point(476, 70);
             btnImportar2.Name = "btnImportar2";
             btnImportar2.PaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365BlackDarkMode;
             btnImportar2.Size = new Size(118, 25);
@@ -203,36 +183,96 @@
             btnComparar.Values.Text = "Comparar Archivos";
             btnComparar.Click += btnComparar_Click;
             // 
+            // archivoLabel1
+            // 
+            archivoLabel1.Location = new Point(157, 111);
+            archivoLabel1.Name = "archivoLabel1";
+            archivoLabel1.PaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Black;
+            archivoLabel1.Size = new Size(6, 2);
+            archivoLabel1.TabIndex = 9;
+            archivoLabel1.Values.Text = "";
+            // 
+            // archivoLabel2
+            // 
+            archivoLabel2.Location = new Point(590, 111);
+            archivoLabel2.Name = "archivoLabel2";
+            archivoLabel2.PaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Black;
+            archivoLabel2.Size = new Size(6, 2);
+            archivoLabel2.TabIndex = 10;
+            archivoLabel2.Values.Text = "";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(219, 72);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(142, 23);
+            comboBox1.TabIndex = 11;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(621, 70);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(142, 23);
+            comboBox2.TabIndex = 12;
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
+            // 
+            // tablaLabel1
+            // 
+            tablaLabel1.Location = new Point(74, 41);
+            tablaLabel1.Name = "tablaLabel1";
+            tablaLabel1.PaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Black;
+            tablaLabel1.Size = new Size(6, 2);
+            tablaLabel1.TabIndex = 13;
+            tablaLabel1.Values.Text = "";
+            // 
+            // tablaLabel2
+            // 
+            tablaLabel2.Location = new Point(476, 41);
+            tablaLabel2.Name = "tablaLabel2";
+            tablaLabel2.PaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Black;
+            tablaLabel2.Size = new Size(6, 2);
+            tablaLabel2.TabIndex = 14;
+            tablaLabel2.Values.Text = "";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(38, 41, 43);
             ClientSize = new Size(829, 632);
+            Controls.Add(tablaLabel2);
+            Controls.Add(tablaLabel1);
+            Controls.Add(comboBox2);
+            Controls.Add(comboBox1);
+            Controls.Add(archivoLabel2);
+            Controls.Add(archivoLabel1);
             Controls.Add(btnComparar);
             Controls.Add(btnImportar2);
             Controls.Add(kryptonDataGridView2);
             Controls.Add(kryptonDataGridView1);
-            Controls.Add(kryptonThemeComboBox2);
             Controls.Add(btnImportar1);
-            Controls.Add(kryptonThemeComboBox1);
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)kryptonThemeComboBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)kryptonThemeComboBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)kryptonDataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)kryptonDataGridView2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private Krypton.Toolkit.KryptonThemeComboBox kryptonThemeComboBox1;
         private Krypton.Toolkit.KryptonButton btnImportar1;
-        private Krypton.Toolkit.KryptonThemeComboBox kryptonThemeComboBox2;
         private Krypton.Toolkit.KryptonDataGridView kryptonDataGridView1;
         private Krypton.Toolkit.KryptonDataGridView kryptonDataGridView2;
         private Krypton.Toolkit.KryptonButton btnImportar2;
         private Krypton.Toolkit.KryptonButton btnComparar;
+        private Krypton.Toolkit.KryptonLabel archivoLabel1;
+        private Krypton.Toolkit.KryptonLabel archivoLabel2;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
+        private Krypton.Toolkit.KryptonLabel tablaLabel1;
+        private Krypton.Toolkit.KryptonLabel tablaLabel2;
     }
 }

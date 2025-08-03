@@ -68,7 +68,6 @@ namespace ComparadorArchivos
 
             return tabla;
         }
-
         internal void ImportarDatos(string tabla, Action<int, int>? notificarProgreso = null)
         {
             var headers = GetHeaders();
@@ -76,6 +75,21 @@ namespace ComparadorArchivos
             CrearTabla(conn, tabla, headers);
             InsertarDatos(conn, tabla, headers,notificarProgreso);
             conn.Close();
+        }
+        internal DataTable Cruzar_Informacion(string nombreTabla1, string columnaTabla1, string nombreTabla2, string columnaTabla2)
+        {
+            using var conn = GetConnection();
+            string consultaSql = $"SELECT [{columnaTabla1}], [{columnaTabla2}] FROM [{nombreTabla1}] INNER JOIN [{nombreTabla2}] ON [{nombreTabla1}.{columnaTabla1}]=[{nombreTabla2}.{columnaTabla2}]";
+
+            using var comando = new SQLiteCommand(consultaSql, conn);
+            using var adaptador = new SQLiteDataAdapter(comando);
+
+            var tabla = new DataTable();
+            adaptador.Fill(tabla);
+
+            conn.Close();
+
+            return tabla;
         }
     }
 }

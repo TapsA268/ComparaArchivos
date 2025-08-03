@@ -85,3 +85,5 @@ C:\Users\Ale\Desktop\ComparadorArchivos\ComparadorArchivos\obj\Debug\net8.0-wind
 C:\Users\Ale\Desktop\ComparadorArchivos\ComparadorArchivos\obj\Debug\net8.0-windows\ComparadorArchivos.pdb
 C:\Users\Ale\Desktop\ComparadorArchivos\ComparadorArchivos\obj\Debug\net8.0-windows\ComparadorArchivos.genruntimeconfig.cache
 C:\Users\Ale\Desktop\ComparadorArchivos\ComparadorArchivos\obj\Debug\net8.0-windows\ref\ComparadorArchivos.dll
+C:\Users\ANALISTA DE SISTEMAS\Desktop\ComparaArchivos\ComparadorArchivos\obj\Debug\net8.0-windows\ComparadorArchivos.ProgresoCarga.resources
+C:\Users\ANALISTA DE SISTEMAS\Desktop\ComparaArchivos\ComparadorArchivos\obj\Debug\net8.0-windows\ComparadorArchivos.InformaciónObtenida.resources

@@ -38,6 +38,11 @@ namespace ComparadorArchivos
             return datos.ConsultarTabla(nombreTabla);
         }
 
+        internal DataTable CruzarInformacion(string nombreTabla1, string columnaTabla1, string nombreTabla2, string columnaTabla2)
+        {
+            return datos.Cruzar_Informacion(nombreTabla1,columnaTabla1,nombreTabla2,columnaTabla2);
+        }
+
         internal string[] ObtenerCampos()
         {
             return datos.GetHeaders();
