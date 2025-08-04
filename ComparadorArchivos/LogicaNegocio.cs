@@ -47,5 +47,15 @@ namespace ComparadorArchivos
         {
             return datos.GetHeaders();
         }
+
+        internal string Exportar(DataTable tabla, string rutaArchivo)
+        {
+            return datos.ExportarDatos(tabla, rutaArchivo);
+        }
+
+        internal string EliminarTablas(string tabla1,string tabla2)
+        {
+            return datos.EliminarTablas(tabla1, tabla2);
+        }
     }
 }

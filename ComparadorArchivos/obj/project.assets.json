@@ -1548,23 +1548,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ANALISTA DE SISTEMAS\\.nuget\\packages\\": {},
+    "C:\\Users\\Ale\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ANALISTA DE SISTEMAS\\Desktop\\ComparaArchivos\\ComparadorArchivos\\ComparadorArchivos.csproj",
+      "projectUniqueName": "C:\\Users\\Ale\\Desktop\\ComparadorArchivos\\ComparadorArchivos\\ComparadorArchivos.csproj",
       "projectName": "ComparadorArchivos",
-      "projectPath": "C:\\Users\\ANALISTA DE SISTEMAS\\Desktop\\ComparaArchivos\\ComparadorArchivos\\ComparadorArchivos.csproj",
-      "packagesPath": "C:\\Users\\ANALISTA DE SISTEMAS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ANALISTA DE SISTEMAS\\Desktop\\ComparaArchivos\\ComparadorArchivos\\obj\\",
+      "projectPath": "C:\\Users\\Ale\\Desktop\\ComparadorArchivos\\ComparadorArchivos\\ComparadorArchivos.csproj",
+      "packagesPath": "C:\\Users\\Ale\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ale\\Desktop\\ComparadorArchivos\\ComparadorArchivos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ANALISTA DE SISTEMAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ale\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1573,6 +1573,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

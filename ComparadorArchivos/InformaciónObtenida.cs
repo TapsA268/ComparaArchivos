@@ -17,7 +17,8 @@ namespace ComparadorArchivos
         string nombreColumna1;
         string nombreTabla2;
         string nombreColumna2;
-        
+        DataTable datos;
+
         public InformaciónObtenida(LogicaNegocio logica, string nombreTabla1, string nombreColumna1, string nombreTabla2, string nombreColumna2)
         {
             InitializeComponent();
@@ -26,11 +27,31 @@ namespace ComparadorArchivos
             this.nombreColumna1 = nombreColumna1;
             this.nombreTabla2 = nombreTabla2;
             this.nombreColumna2 = nombreColumna2;
+            MostrarInfo();
         }
 
         public void MostrarInfo()
         {
-            kryptonDataGridView2.DataSource = bll.CruzarInformacion(nombreTabla1, nombreColumna1, nombreTabla2, nombreColumna2);
+            datos = bll.CruzarInformacion(nombreTabla1, nombreColumna1, nombreTabla2, nombreColumna2);
+            kryptonDataGridView2.DataSource = datos;
+        }
+
+        private void btnExportar_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog guardarArchivo = new SaveFileDialog
+            {
+                Title = "Guarda el archivo",
+                DefaultExt=".xlsx",
+                OverwritePrompt=true,
+                AddExtension=true,
+                Filter = "Archivo de Excel |*.xls;*.xlsx;*xlsxb"
+            };
+            
+            if (guardarArchivo.ShowDialog() == DialogResult.OK)
+            {
+                MessageBox.Show(bll.Exportar(datos, guardarArchivo.FileName));
+                this.Close();
+            }
         }
     }
 }

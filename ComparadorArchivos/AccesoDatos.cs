@@ -64,8 +64,6 @@ namespace ComparadorArchivos
             var tabla = new DataTable();
             adaptador.Fill(tabla);
 
-            conn.Close();
-
             return tabla;
         }
         internal void ImportarDatos(string tabla, Action<int, int>? notificarProgreso = null)
@@ -74,22 +72,64 @@ namespace ComparadorArchivos
             using var conn = GetConnection();
             CrearTabla(conn, tabla, headers);
             InsertarDatos(conn, tabla, headers,notificarProgreso);
-            conn.Close();
         }
         internal DataTable Cruzar_Informacion(string nombreTabla1, string columnaTabla1, string nombreTabla2, string columnaTabla2)
         {
             using var conn = GetConnection();
-            string consultaSql = $"SELECT [{columnaTabla1}], [{columnaTabla2}] FROM [{nombreTabla1}] INNER JOIN [{nombreTabla2}] ON [{nombreTabla1}.{columnaTabla1}]=[{nombreTabla2}.{columnaTabla2}]";
+            string consultaSql = $@"
+            SELECT [{nombreTabla1}].[{columnaTabla1}], [{nombreTabla2}].[{columnaTabla2}] 
+            FROM [{nombreTabla1}]
+            INNER JOIN [{nombreTabla2}] 
+            ON [{nombreTabla1}].[{columnaTabla1}] = [{nombreTabla2}].[{columnaTabla2}]";
 
             using var comando = new SQLiteCommand(consultaSql, conn);
             using var adaptador = new SQLiteDataAdapter(comando);
 
             var tabla = new DataTable();
-            adaptador.Fill(tabla);
-
-            conn.Close();
+            adaptador.Fill(tabla);            
 
             return tabla;
         }
+        internal string ExportarDatos(DataTable dataTable,string rutaArchivo)
+        {
+            string msj = string.Empty;
+            try
+            {
+                using (var workbook = new XLWorkbook())
+                {                    
+                    IXLWorksheet worksheet = workbook.Worksheets.Add(dataTable,"Hoja 1");
+                   
+                    worksheet.Columns().AdjustToContents();
+
+                    // Save the workbook to the specified file path
+                    workbook.SaveAs(rutaArchivo);
+                    msj=$"Datos exportados a Excel Correctamente";
+                }
+            }
+            catch (Exception ex)
+            {
+                msj=$"Error al guardar";
+            }
+
+            return msj;
+        }
+        public string EliminarTablas(string tabla1,string tabla2)
+        {
+            try
+            {
+                using var conn = GetConnection();
+                {
+                    string sql = $"DROP TABLE [{tabla1}]; DROP TABLE [{tabla2}];";
+                    SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+                    cmd.ExecuteNonQuery();
+                }
+                return "Las tablas fueron eliminadas correctamente.";
+            }
+            catch (Exception ex)
+            {
+                return $"Error al eliminar las tablas.";
+            }
+        }
+
     }
 }

@@ -55,7 +55,7 @@ namespace ComparadorArchivos
 
         private void btnComparar_Click(object sender, EventArgs e)
         {
-            InformaciónObtenida info = new InformaciónObtenida(bll,tablaLabel1.Text,archivoLabel1.Text,tablaLabel2.Text,archivoLabel2.Text);
+            InformaciónObtenida info = new InformaciónObtenida(bll, tablaLabel1.Text, archivoLabel1.Text, tablaLabel2.Text, archivoLabel2.Text);
             info.Show();
         }
 
@@ -80,6 +80,11 @@ namespace ComparadorArchivos
         {
             var seleccionado = comboBox2.Text;
             archivoLabel2.Text = seleccionado;
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            MessageBox.Show(bll.EliminarTablas(tablaLabel1.Text, tablaLabel2.Text));
         }
     }
 }

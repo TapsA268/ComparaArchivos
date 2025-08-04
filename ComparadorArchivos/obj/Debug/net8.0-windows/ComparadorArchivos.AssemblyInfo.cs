@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ComparadorArchivos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a514e52a78b03261ec6f1fc35bd311a40a614ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58512cb0d806011f80def4f48bc6cba4f9108548")]
 [assembly: System.Reflection.AssemblyProductAttribute("ComparadorArchivos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ComparadorArchivos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

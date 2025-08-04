@@ -148,7 +148,7 @@
             // 
             // btnComparar
             // 
-            btnComparar.Location = new Point(355, 550);
+            btnComparar.Location = new Point(352, 543);
             btnComparar.Name = "btnComparar";
             btnComparar.PaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365BlackDarkMode;
             btnComparar.Size = new Size(118, 25);
@@ -256,6 +256,7 @@
             Controls.Add(btnImportar1);
             Name = "Form1";
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             ((System.ComponentModel.ISupportInitialize)kryptonDataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)kryptonDataGridView2).EndInit();
             ResumeLayout(false);
