@@ -103,12 +103,12 @@ namespace ComparadorArchivos
 
                     // Save the workbook to the specified file path
                     workbook.SaveAs(rutaArchivo);
-                    msj=$"Datos exportados a Excel Correctamente";
+                    msj= "Datos exportados a Excel correctamente";
                 }
             }
             catch (Exception ex)
             {
-                msj=$"Error al guardar";
+                msj= "Error al guardar";
             }
 
             return msj;

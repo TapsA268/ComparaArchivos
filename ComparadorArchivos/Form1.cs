@@ -26,7 +26,7 @@ namespace ComparadorArchivos
                 string filePath = file.FileName;
                 bll = new LogicaNegocio(filePath);
                 ProgresoCarga progreso = new ProgresoCarga(bll, filePath);
-                progreso.Show();
+                progreso.ShowDialog();
                 kryptonDataGridView1.DataSource = bll.ObtenerDatos(filePath);
                 tablaLabel1.Text = filePath;
             }
@@ -46,7 +46,7 @@ namespace ComparadorArchivos
                 string filePath = file.FileName;
                 bll = new LogicaNegocio(filePath);
                 ProgresoCarga progreso = new ProgresoCarga(bll, filePath);
-                progreso.Show();
+                progreso.ShowDialog();
                 kryptonDataGridView2.DataSource = bll.ObtenerDatos(filePath);
                 tablaLabel2.Text = filePath;
             }

@@ -1,21 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Ale\\Desktop\\ComparadorArchivos\\",
+  "WorkspaceRootPath": "C:\\Users\\ANALISTA DE SISTEMAS\\Desktop\\ComparaArchivos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91E840A7-20C7-42BD-BBB5-97680DBAF812}|ComparadorArchivos\\ComparadorArchivos.csproj|c:\\users\\ale\\desktop\\comparadorarchivos\\comparadorarchivos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{91E840A7-20C7-42BD-BBB5-97680DBAF812}|ComparadorArchivos\\ComparadorArchivos.csproj|solutionrelative:comparadorarchivos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91E840A7-20C7-42BD-BBB5-97680DBAF812}|ComparadorArchivos\\ComparadorArchivos.csproj|c:\\users\\ale\\desktop\\comparadorarchivos\\comparadorarchivos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{91E840A7-20C7-42BD-BBB5-97680DBAF812}|ComparadorArchivos\\ComparadorArchivos.csproj|c:\\users\\analista de sistemas\\desktop\\comparaarchivos\\comparadorarchivos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91E840A7-20C7-42BD-BBB5-97680DBAF812}|ComparadorArchivos\\ComparadorArchivos.csproj|solutionrelative:comparadorarchivos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91E840A7-20C7-42BD-BBB5-97680DBAF812}|ComparadorArchivos\\ComparadorArchivos.csproj|c:\\users\\ale\\desktop\\comparadorarchivos\\comparadorarchivos\\logicanegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{91E840A7-20C7-42BD-BBB5-97680DBAF812}|ComparadorArchivos\\ComparadorArchivos.csproj|c:\\users\\analista de sistemas\\desktop\\comparaarchivos\\comparadorarchivos\\informaci\u00F3nobtenida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91E840A7-20C7-42BD-BBB5-97680DBAF812}|ComparadorArchivos\\ComparadorArchivos.csproj|solutionrelative:comparadorarchivos\\informaci\u00F3nobtenida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91E840A7-20C7-42BD-BBB5-97680DBAF812}|ComparadorArchivos\\ComparadorArchivos.csproj|c:\\users\\analista de sistemas\\desktop\\comparaarchivos\\comparadorarchivos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{91E840A7-20C7-42BD-BBB5-97680DBAF812}|ComparadorArchivos\\ComparadorArchivos.csproj|solutionrelative:comparadorarchivos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91E840A7-20C7-42BD-BBB5-97680DBAF812}|ComparadorArchivos\\ComparadorArchivos.csproj|c:\\users\\analista de sistemas\\desktop\\comparaarchivos\\comparadorarchivos\\logicanegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91E840A7-20C7-42BD-BBB5-97680DBAF812}|ComparadorArchivos\\ComparadorArchivos.csproj|solutionrelative:comparadorarchivos\\logicanegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91E840A7-20C7-42BD-BBB5-97680DBAF812}|ComparadorArchivos\\ComparadorArchivos.csproj|c:\\users\\ale\\desktop\\comparadorarchivos\\comparadorarchivos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{91E840A7-20C7-42BD-BBB5-97680DBAF812}|ComparadorArchivos\\ComparadorArchivos.csproj|c:\\users\\analista de sistemas\\desktop\\comparaarchivos\\comparadorarchivos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91E840A7-20C7-42BD-BBB5-97680DBAF812}|ComparadorArchivos\\ComparadorArchivos.csproj|solutionrelative:comparadorarchivos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,15 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -90,11 +94,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Informaci\u00F3nObtenida.cs",
+              "DocumentMoniker": "C:\\Users\\ANALISTA DE SISTEMAS\\Desktop\\ComparaArchivos\\ComparadorArchivos\\Informaci\u00F3nObtenida.cs",
+              "RelativeDocumentMoniker": "ComparadorArchivos\\Informaci\u00F3nObtenida.cs",
+              "ToolTip": "C:\\Users\\ANALISTA DE SISTEMAS\\Desktop\\ComparaArchivos\\ComparadorArchivos\\Informaci\u00F3nObtenida.cs",
+              "RelativeToolTip": "ComparadorArchivos\\Informaci\u00F3nObtenida.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T00:47:28.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Ale\\Desktop\\ComparadorArchivos\\ComparadorArchivos\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ANALISTA DE SISTEMAS\\Desktop\\ComparaArchivos\\ComparadorArchivos\\Form1.cs",
               "RelativeDocumentMoniker": "ComparadorArchivos\\Form1.cs",
-              "ToolTip": "C:\\Users\\Ale\\Desktop\\ComparadorArchivos\\ComparadorArchivos\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\ANALISTA DE SISTEMAS\\Desktop\\ComparaArchivos\\ComparadorArchivos\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "ComparadorArchivos\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-02T23:24:22.818Z",
@@ -102,39 +119,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Ale\\Desktop\\ComparadorArchivos\\ComparadorArchivos\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ANALISTA DE SISTEMAS\\Desktop\\ComparaArchivos\\ComparadorArchivos\\Form1.cs",
               "RelativeDocumentMoniker": "ComparadorArchivos\\Form1.cs",
-              "ToolTip": "C:\\Users\\Ale\\Desktop\\ComparadorArchivos\\ComparadorArchivos\\Form1.cs",
+              "ToolTip": "C:\\Users\\ANALISTA DE SISTEMAS\\Desktop\\ComparaArchivos\\ComparadorArchivos\\Form1.cs",
               "RelativeToolTip": "ComparadorArchivos\\Form1.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAvwFAAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAQwFkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-29T20:16:00.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LogicaNegocio.cs",
-              "DocumentMoniker": "C:\\Users\\Ale\\Desktop\\ComparadorArchivos\\ComparadorArchivos\\LogicaNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\ANALISTA DE SISTEMAS\\Desktop\\ComparaArchivos\\ComparadorArchivos\\LogicaNegocio.cs",
               "RelativeDocumentMoniker": "ComparadorArchivos\\LogicaNegocio.cs",
-              "ToolTip": "C:\\Users\\Ale\\Desktop\\ComparadorArchivos\\ComparadorArchivos\\LogicaNegocio.cs",
+              "ToolTip": "C:\\Users\\ANALISTA DE SISTEMAS\\Desktop\\ComparaArchivos\\ComparadorArchivos\\LogicaNegocio.cs",
               "RelativeToolTip": "ComparadorArchivos\\LogicaNegocio.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAnwDkAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-29T20:20:39.924Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AccesoDatos.cs",
-              "DocumentMoniker": "C:\\Users\\Ale\\Desktop\\ComparadorArchivos\\ComparadorArchivos\\AccesoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\ANALISTA DE SISTEMAS\\Desktop\\ComparaArchivos\\ComparadorArchivos\\AccesoDatos.cs",
               "RelativeDocumentMoniker": "ComparadorArchivos\\AccesoDatos.cs",
-              "ToolTip": "C:\\Users\\Ale\\Desktop\\ComparadorArchivos\\ComparadorArchivos\\AccesoDatos.cs",
+              "ToolTip": "C:\\Users\\ANALISTA DE SISTEMAS\\Desktop\\ComparaArchivos\\ComparadorArchivos\\AccesoDatos.cs",
               "RelativeToolTip": "ComparadorArchivos\\AccesoDatos.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAQwG0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAcwFsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-29T20:13:27.994Z",
               "EditorCaption": ""

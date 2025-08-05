@@ -45,7 +45,7 @@
             // 
             // btnImportar1
             // 
-            btnImportar1.Location = new Point(74, 70);
+            btnImportar1.Location = new Point(72, 140);
             btnImportar1.Name = "btnImportar1";
             btnImportar1.PaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365BlackDarkMode;
             btnImportar1.Size = new Size(118, 25);
@@ -86,7 +86,7 @@
             kryptonDataGridView1.AllowUserToDeleteRows = false;
             kryptonDataGridView1.BorderStyle = BorderStyle.None;
             kryptonDataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            kryptonDataGridView1.Location = new Point(74, 160);
+            kryptonDataGridView1.Location = new Point(72, 230);
             kryptonDataGridView1.Name = "kryptonDataGridView1";
             kryptonDataGridView1.ReadOnly = true;
             kryptonDataGridView1.Size = new Size(287, 352);
@@ -100,7 +100,7 @@
             kryptonDataGridView2.AllowUserToDeleteRows = false;
             kryptonDataGridView2.BorderStyle = BorderStyle.None;
             kryptonDataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            kryptonDataGridView2.Location = new Point(476, 160);
+            kryptonDataGridView2.Location = new Point(474, 230);
             kryptonDataGridView2.Name = "kryptonDataGridView2";
             kryptonDataGridView2.ReadOnly = true;
             kryptonDataGridView2.Size = new Size(287, 352);
@@ -111,7 +111,7 @@
             // 
             // btnImportar2
             // 
-            btnImportar2.Location = new Point(476, 70);
+            btnImportar2.Location = new Point(474, 140);
             btnImportar2.Name = "btnImportar2";
             btnImportar2.PaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365BlackDarkMode;
             btnImportar2.Size = new Size(118, 25);
@@ -148,7 +148,7 @@
             // 
             // btnComparar
             // 
-            btnComparar.Location = new Point(352, 543);
+            btnComparar.Location = new Point(350, 613);
             btnComparar.Name = "btnComparar";
             btnComparar.PaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365BlackDarkMode;
             btnComparar.Size = new Size(118, 25);
@@ -185,7 +185,7 @@
             // 
             // archivoLabel1
             // 
-            archivoLabel1.Location = new Point(157, 111);
+            archivoLabel1.Location = new Point(155, 181);
             archivoLabel1.Name = "archivoLabel1";
             archivoLabel1.PaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Black;
             archivoLabel1.Size = new Size(6, 2);
@@ -194,7 +194,7 @@
             // 
             // archivoLabel2
             // 
-            archivoLabel2.Location = new Point(590, 111);
+            archivoLabel2.Location = new Point(588, 181);
             archivoLabel2.Name = "archivoLabel2";
             archivoLabel2.PaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Black;
             archivoLabel2.Size = new Size(6, 2);
@@ -204,7 +204,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(219, 72);
+            comboBox1.Location = new Point(217, 142);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(142, 23);
             comboBox1.TabIndex = 11;
@@ -213,7 +213,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(621, 70);
+            comboBox2.Location = new Point(619, 140);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(142, 23);
             comboBox2.TabIndex = 12;
@@ -221,7 +221,7 @@
             // 
             // tablaLabel1
             // 
-            tablaLabel1.Location = new Point(74, 41);
+            tablaLabel1.Location = new Point(72, 111);
             tablaLabel1.Name = "tablaLabel1";
             tablaLabel1.PaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Black;
             tablaLabel1.Size = new Size(6, 2);
@@ -230,7 +230,7 @@
             // 
             // tablaLabel2
             // 
-            tablaLabel2.Location = new Point(476, 41);
+            tablaLabel2.Location = new Point(474, 111);
             tablaLabel2.Name = "tablaLabel2";
             tablaLabel2.PaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Black;
             tablaLabel2.Size = new Size(6, 2);
@@ -242,7 +242,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(38, 41, 43);
-            ClientSize = new Size(829, 632);
+            ClientSize = new Size(829, 714);
             Controls.Add(tablaLabel2);
             Controls.Add(tablaLabel1);
             Controls.Add(comboBox2);
