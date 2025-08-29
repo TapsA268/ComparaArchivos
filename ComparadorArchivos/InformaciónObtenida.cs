@@ -49,7 +49,7 @@ namespace ComparadorArchivos
             
             if (guardarArchivo.ShowDialog() == DialogResult.OK)
             {
-                MessageBox.Show(bll.Exportar(datos, guardarArchivo.FileName));
+                MessageBox.Show(bll.Exportar(datos, guardarArchivo.FileName),"", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }
         }

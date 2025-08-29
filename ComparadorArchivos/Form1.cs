@@ -11,6 +11,7 @@ namespace ComparadorArchivos
             InitializeComponent();
             comboBox1.Items.Clear();
             comboBox2.Items.Clear();
+            btnComparar.Enabled = false;
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
@@ -29,8 +30,13 @@ namespace ComparadorArchivos
                 progreso.ShowDialog();
                 kryptonDataGridView1.DataSource = bll.ObtenerDatos(filePath);
                 tablaLabel1.Text = filePath;
+                LlenarComboBox(comboBox1);
             }
-            LlenarComboBox(comboBox1);
+            else
+            {
+                MessageBox.Show("Selecciona un archivo de Excel", "Selecciona un archivo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
         }
 
         private void btnImportar2_Click(object sender, EventArgs e)
@@ -49,8 +55,12 @@ namespace ComparadorArchivos
                 progreso.ShowDialog();
                 kryptonDataGridView2.DataSource = bll.ObtenerDatos(filePath);
                 tablaLabel2.Text = filePath;
+                LlenarComboBox(comboBox2);
             }
-            LlenarComboBox(comboBox2);
+            else
+            {
+                MessageBox.Show("Selecciona un archivo de Excel", "Selecciona un archivo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnComparar_Click(object sender, EventArgs e)
@@ -74,17 +84,29 @@ namespace ComparadorArchivos
         {
             var seleccionado = comboBox1.Text;
             archivoLabel1.Text = seleccionado;
+            VerificarLabels();
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             var seleccionado = comboBox2.Text;
             archivoLabel2.Text = seleccionado;
+            VerificarLabels();
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            MessageBox.Show(bll.EliminarTablas(tablaLabel1.Text, tablaLabel2.Text));
+            MessageBox.Show(bll.EliminarTablas(tablaLabel1.Text, tablaLabel2.Text), "Eliminación de Tablas", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void VerificarLabels()
+        {
+            if (!string.IsNullOrWhiteSpace(archivoLabel1.Text) &&
+                !string.IsNullOrWhiteSpace(archivoLabel2.Text))
+            {
+                btnComparar.Enabled = true;
+            }            
+        }
+
     }
 }

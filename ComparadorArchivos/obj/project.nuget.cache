@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2Y1a1t/2hK0=",
+  "dgSpecHash": "5V8m5KROoLw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ANALISTA DE SISTEMAS\\Desktop\\ComparaArchivos\\ComparadorArchivos\\ComparadorArchivos.csproj",
+  "projectFilePath": "C:\\Users\\ANALISTA DE SISTEMAS\\Documents\\Manuales\\ComparaArchivos\\ComparadorArchivos\\ComparadorArchivos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ANALISTA DE SISTEMAS\\.nuget\\packages\\closedxml\\0.105.0\\closedxml.0.105.0.nupkg.sha512",
     "C:\\Users\\ANALISTA DE SISTEMAS\\.nuget\\packages\\closedxml.parser\\2.0.0\\closedxml.parser.2.0.0.nupkg.sha512",

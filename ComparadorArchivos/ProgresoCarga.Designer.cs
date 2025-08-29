@@ -38,6 +38,7 @@
             kryptonProgressBar1.Name = "kryptonProgressBar1";
             kryptonProgressBar1.Size = new Size(183, 26);
             kryptonProgressBar1.StateCommon.Back.Color1 = Color.FromArgb(21, 128, 61);
+            kryptonProgressBar1.StateCommon.Content.LongText.Color1 = Color.White;
             kryptonProgressBar1.StateDisabled.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.OneNote;
             kryptonProgressBar1.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.OneNote;
             kryptonProgressBar1.TabIndex = 0;

@@ -27,7 +27,7 @@ namespace ComparadorArchivos
             await Task.Run(() => CargarDatos());
 
             kryptonLabel1.Text = "¡Carga finalizada!";
-            MessageBox.Show(CargarDatos());           
+            MessageBox.Show(CargarDatos(),"",MessageBoxButtons.OK, MessageBoxIcon.Information);           
             this.Close();
         }
         private string CargarDatos()
